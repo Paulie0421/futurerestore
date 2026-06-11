@@ -82,6 +82,7 @@ jobs:
           image: debian:bookworm-slim
           options: -v ${{ github.workspace }}/..:/tmp/Builder/repos/
           run: |
+            apt-get install -y libplist-dev
             /tmp/Builder/repos/futurerestore/.github/workflows/linux-bootstrap.sh
             /tmp/Builder/repos/futurerestore/.github/workflows/linux-build.sh
             /tmp/Builder/repos/futurerestore/.github/workflows/linux-post.sh
