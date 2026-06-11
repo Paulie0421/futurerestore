@@ -83,7 +83,7 @@ jobs:
           options: -v ${{ github.workspace }}/..:/tmp/Builder/repos/
           run: |
             apt-get update
-            apt-get install -y libplist-dev pkg-config git
+            apt-get install -y libplist-dev pkg-config git libcurl4-openssl-dev libirecovery-1.0-dev libimobiledevice-dev libssl-dev
             rm -rf /tmp/Builder/repos/futurerestore/dep_root/lib
             rm -rf /tmp/Builder/repos/futurerestore/dep_root/include
             /tmp/Builder/repos/futurerestore/.github/workflows/linux-bootstrap.sh
