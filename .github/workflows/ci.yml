@@ -115,7 +115,7 @@ jobs:
             ${{ github.workspace }}/.github/workflows/futurerestore-Linux-x86_64*-DEBUG.tar.xz
       - name: futurerestore Linux x86_64 ASAN Archive
         id: futurerestore-Linux-x86_64-ASAN-Archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: futurerestore-Linux-x86_64-ASAN
           path: |
